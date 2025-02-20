@@ -1,0 +1,17 @@
+version: 6.11.0.{build}
+image: Visual Studio 2022
+environment:
+  CC: cl.exe
+  CXX: cl.exe
+install:
+- cmd: >-
+    call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+
+build_script:
+- cmd: >-
+    C:\Qt\6.8.1\msvc2022_64\bin\qmake.exe qt-jxr-image-plugin-win.pro
+
+    nmake.exe
+
+artifacts:
+- path: kimg_jxr.dll
