@@ -1,7 +1,7 @@
 TARGET = kimg_jxr
 
-HEADERS = src/jxr_p.h src/util_p.h
-SOURCES = src/jxr.cpp
+HEADERS = src/jxr_p.h src/util_p.h src/microexif_p.h
+SOURCES = src/jxr.cpp src/microexif.cpp
 OTHER_FILES = src/jxr.json
 
 DEFINES += __ANSI__ DISABLE_PERF_MEASUREMENT
@@ -18,7 +18,7 @@ TEMPLATE = lib
 CONFIG += release skip_target_version_ext strict_c strict_c++ warn_on plugin
 CONFIG -= separate_debug_info debug debug_and_release force_debug_info
 
-win32:VERSION = 6.11.0
+win32:VERSION = 6.12.0
 QMAKE_TARGET_COMPANY = "Daniel Novomesky"
 QMAKE_TARGET_PRODUCT = "qt-jxr-image-plugin"
 QMAKE_TARGET_DESCRIPTION = "JPEG XR plug-in for Qt6 applications"
