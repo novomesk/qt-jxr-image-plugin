@@ -18,7 +18,7 @@ TEMPLATE = lib
 CONFIG += release skip_target_version_ext strict_c strict_c++ warn_on plugin
 CONFIG -= separate_debug_info debug debug_and_release force_debug_info
 
-win32:VERSION = 6.12.0
+win32:VERSION = 6.14.0
 QMAKE_TARGET_COMPANY = "Daniel Novomesky"
 QMAKE_TARGET_PRODUCT = "qt-jxr-image-plugin"
 QMAKE_TARGET_DESCRIPTION = "JPEG XR plug-in for Qt6 applications"
